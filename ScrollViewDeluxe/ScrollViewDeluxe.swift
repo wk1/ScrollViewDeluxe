@@ -14,7 +14,11 @@ struct ScrollViewDeluxe: View {
   
   var body: some View {
     VStack(spacing: 0) {
-      GeometryReader { _ in // necessary for scrollview to not get pushed off screen when maxHeight is set. But why?
+      /*
+       GeometryReader wrapper seems necessary for scrollview to not get pushed off screen when maxHeight is set. But why?
+       (Source)[https://stackoverflow.com/questions/70056241/how-to-make-an-item-in-scrollview-take-up-the-height-of-the-entire-screen-in-swi]
+       */
+      GeometryReader { _ in
         ScrollView() {
           Text("Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla")
             .frame(maxWidth: .infinity)
