@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "awesomeswaggary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wk1/AwesomeSwaggary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e36379c91330852cc103ad25d6e77d9b8c1a771a"
+      }
+    }
+  ],
+  "version" : 2
+}
