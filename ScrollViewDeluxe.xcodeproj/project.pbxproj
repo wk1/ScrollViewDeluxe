@@ -14,6 +14,8 @@
 		960EB7E329B0F7D3001E34C0 /* ScrollViewDeluxeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EB7E229B0F7D3001E34C0 /* ScrollViewDeluxeTests.swift */; };
 		960EB7ED29B0F7D3001E34C0 /* ScrollViewDeluxeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EB7EC29B0F7D3001E34C0 /* ScrollViewDeluxeUITests.swift */; };
 		960EB7EF29B0F7D3001E34C0 /* ScrollViewDeluxeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EB7EE29B0F7D3001E34C0 /* ScrollViewDeluxeUITestsLaunchTests.swift */; };
+		960EB7FC29B0F7FE001E34C0 /* ScrollViewDeluxe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EB7FB29B0F7FE001E34C0 /* ScrollViewDeluxe.swift */; };
+		960EB7FF29B0FCDC001E34C0 /* AwesomeSwaggary in Frameworks */ = {isa = PBXBuildFile; productRef = 960EB7FE29B0FCDC001E34C0 /* AwesomeSwaggary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		960EB7E829B0F7D3001E34C0 /* ScrollViewDeluxeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDeluxeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		960EB7EC29B0F7D3001E34C0 /* ScrollViewDeluxeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDeluxeUITests.swift; sourceTree = "<group>"; };
 		960EB7EE29B0F7D3001E34C0 /* ScrollViewDeluxeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDeluxeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		960EB7FB29B0F7FE001E34C0 /* ScrollViewDeluxe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDeluxe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960EB7FF29B0FCDC001E34C0 /* AwesomeSwaggary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +83,9 @@
 				960EB7EB29B0F7D3001E34C0 /* ScrollViewDeluxeUITests */,
 				960EB7CF29B0F7D3001E34C0 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		960EB7CF29B0F7D3001E34C0 /* Products */ = {
 			isa = PBXGroup;
@@ -96,6 +102,7 @@
 			children = (
 				960EB7D129B0F7D3001E34C0 /* ScrollViewDeluxeApp.swift */,
 				960EB7D329B0F7D3001E34C0 /* ContentView.swift */,
+				960EB7FB29B0F7FE001E34C0 /* ScrollViewDeluxe.swift */,
 				960EB7D529B0F7D3001E34C0 /* Assets.xcassets */,
 				960EB7D729B0F7D3001E34C0 /* Preview Content */,
 			);
@@ -143,6 +150,9 @@
 			dependencies = (
 			);
 			name = ScrollViewDeluxe;
+			packageProductDependencies = (
+				960EB7FE29B0FCDC001E34C0 /* AwesomeSwaggary */,
+			);
 			productName = ScrollViewDeluxe;
 			productReference = 960EB7CE29B0F7D3001E34C0 /* ScrollViewDeluxe.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 960EB7C529B0F7D3001E34C0;
+			packageReferences = (
+				960EB7FD29B0FCDC001E34C0 /* XCRemoteSwiftPackageReference "AwesomeSwaggary" */,
+			);
 			productRefGroup = 960EB7CF29B0F7D3001E34C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960EB7FC29B0F7FE001E34C0 /* ScrollViewDeluxe.swift in Sources */,
 				960EB7D429B0F7D3001E34C0 /* ContentView.swift in Sources */,
 				960EB7D229B0F7D3001E34C0 /* ScrollViewDeluxeApp.swift in Sources */,
 			);
@@ -583,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		960EB7FD29B0FCDC001E34C0 /* XCRemoteSwiftPackageReference "AwesomeSwaggary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wk1/AwesomeSwaggary";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		960EB7FE29B0FCDC001E34C0 /* AwesomeSwaggary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 960EB7FD29B0FCDC001E34C0 /* XCRemoteSwiftPackageReference "AwesomeSwaggary" */;
+			productName = AwesomeSwaggary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 960EB7C629B0F7D3001E34C0 /* Project object */;
 }
